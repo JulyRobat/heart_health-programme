@@ -1,0 +1,107 @@
+{
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+        }
+    },
+    "pages": [
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "登录",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/register/register",
+            "style": {
+                "navigationBarTitleText": "注册",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "心晴港湾",
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "pages/chat/chat",
+            "style": {
+                "navigationBarTitleText": "AI心理对话",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/emotion/emotion",
+            "style": {
+                "navigationBarTitleText": "情感分析",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/knowledge/knowledge",
+            "style": {
+                "navigationBarTitleText": "心理健康知识库",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/emergency/emergency",
+            "style": {
+                "navigationBarTitleText": "紧急求助",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/admin/dashboard",
+            "style": {
+                "navigationBarTitleText": "管理控制台",
+                "enablePullDownRefresh": true
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "心晴港湾 - 基于AI情感计算的心理健康支持系统",
+        "navigationBarBackgroundColor": "#ffffff",
+        "backgroundColor": "#f5f5f5",
+        "app-plus": {
+            "background": "#efeff4"
+        }
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#667eea",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/home-active.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/chat/chat",
+                "iconPath": "static/tabbar/chat.png",
+                "selectedIconPath": "static/tabbar/chat-active.png",
+                "text": "AI对话"
+            },
+            {
+                "pagePath": "pages/emotion/emotion",
+                "iconPath": "static/tabbar/emotion.png",
+                "selectedIconPath": "static/tabbar/emotion-active.png",
+                "text": "情感分析"
+            },
+            {
+                "pagePath": "pages/knowledge/knowledge",
+                "iconPath": "static/tabbar/knowledge.png",
+                "selectedIconPath": "static/tabbar/knowledge-active.png",
+                "text": "知识库"
+            }
+        ]
+    }
+}

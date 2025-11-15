@@ -1,37 +1,25 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
-    "lint:eslint": "eslint . --fix --cache",
-    "lint": "run-s lint:*",
-    "format": "prettier --write src/"
-  },
-  "dependencies": {
-    "pinia": "^3.0.3",
-    "vue": "^3.5.22"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.37.0",
-    "@prettier/plugin-oxc": "^0.0.4",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "eslint": "^9.37.0",
-    "eslint-plugin-oxlint": "~1.23.0",
-    "eslint-plugin-vue": "~10.5.0",
-    "globals": "^16.4.0",
-    "npm-run-all2": "^8.0.4",
-    "oxlint": "~1.23.0",
-    "prettier": "3.6.2",
-    "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3"
-  }
+    "name": "mental-health-frontend",
+    "version": "1.0.0",
+    "description": "心晴港湾 - 基于AI情感计算的心理健康支持系统",
+    "main": "main.js",
+    "scripts": {
+        "dev:h5": "uni -p h5",
+        "build:h5": "uni build -p h5",
+        "dev:mp-weixin": "uni -p mp-weixin",
+        "build:mp-weixin": "uni build -p mp-weixin"
+    },
+    "dependencies": {
+        "@dcloudio/uni-app": "3.0.0-31520230324001",
+        "@dcloudio/uni-h5": "3.0.0-31520230324001",
+        "@dcloudio/uni-mp-weixin": "3.0.0-31520230324001",
+        "pinia": "^2.1.0",
+        "vue": "^3.3.0"
+    },
+    "devDependencies": {
+        "@dcloudio/types": "3.0.0",
+        "@dcloudio/uni-cli-shared": "^2.0.2-4080420251103001",
+        "@dcloudio/vite-plugin-uni": "3.0.0",
+        "vite": "^4.4.0"
+    }
 }
